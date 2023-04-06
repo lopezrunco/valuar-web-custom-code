@@ -1,3 +1,65 @@
-#astroid-sticky-header {
-    background-color: yellow !important;
+/* Override de clases existentes */
+
+.top-bar {
+    display: none;
+}
+
+.logo-wrapper a {
+    padding: 0rem 4rem;
+}
+
+.astroid-nav .nav-title {
+    text-transform: capitalize;
+}
+
+.astroid-nav .nav-link,
+.astroid-sidebar-menu .nav-link {
+    color: #fff !important;
+}
+
+@media screen and (min-width: 992px) {
+    .logo-wrapper a {
+        padding: 0;
+    }
+
+    .astroid-header-section header.astroid-header:not(.astroid-header-sticky) {
+        padding: 15px 0 0 !important;
+    }
+
+    .astroid-header-section header.astroid-stacked-divided-header .astroid-nav-wraper {
+        background-color: #039f9d;
+    }
+}
+
+/* Estilos para HTML insertado con custom-scripts.js */
+@media screen and (max-width: 992px) {
+    #astroid-header .contact-info-wrapper {
+        display: none;
+    }
+}
+
+#astroid-header .contact-info-wrapper {
+    position: relative;
+    top: -120px;
+    text-align: right;
+    height: 0;
+}
+
+#astroid-header .contact-info-wrapper .container .row .content-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+#astroid-header .contact-info-wrapper .container .row .content-wrapper a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #039f9d;
+    font-size: 14px;
+}
+
+#astroid-header .contact-info-wrapper .container .row .content-wrapper a:hover {
+    text-decoration: none;
 }
