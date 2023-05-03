@@ -1,5 +1,11 @@
-/* Override de clases existentes */
+/* Override general styles */
 
+/* General styles */
+.uk-button {
+    text-transform: lowercase !important;
+}
+
+/* Header */
 .top-bar {
     display: none;
 }
@@ -31,7 +37,7 @@
     }
 }
 
-/* Estilos para HTML insertado con custom-scripts.js */
+/* Styles for HTML inserted with custom-scripts.js */
 @media screen and (max-width: 992px) {
     #astroid-header .contact-info-wrapper {
         display: none;

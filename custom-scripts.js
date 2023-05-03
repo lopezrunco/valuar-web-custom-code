@@ -3,9 +3,10 @@ let d = document
 
 d.addEventListener('DOMContentLoaded', (e) => {
     appendContactInfo()
+    appendSliderOverlay()
 })
 
-// Insertar info de contacto en header
+// Insert contact info on header
 const appendContactInfo = () => {
     const $contactInfoWrapper = d.createElement('div')
     const headerElement = d.getElementById('astroid-header')
