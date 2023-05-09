@@ -37,6 +37,64 @@
     }
 }
 
+/* Breadcrumbs */
+
+.mod_breadcrumbs {
+    padding: 2rem !important;
+    border-top: 1px solid #039f9d47 !important;
+    border-bottom: 1px solid #039f9d47 !important;
+    margin-bottom: 20px !important;
+}
+
+.mod_breadcrumbs .heading-title-page {
+    font-size: 40px !important;
+    margin-bottom: 0 !important;
+}
+
+/* Virtuemart override styles */
+
+.orderby-displaynumber,
+.category-view h4,
+div.vm-details-button,
+.horizontal-separator,
+.category-view>.browse-view h1 {
+    display: none !important;
+}
+
+.browse-view .row .product .spacer img,
+.related-products-view .row .product .spacer img {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 10px;
+}
+
+.vm-product-descr-container-1>h2,
+.vm-product-descr-container-0>h2 {
+    font-size: 25px !important;
+    margin: 0 0 20px 0 !important;
+    text-align: left !important;
+}
+
+.vm-product-descr-container-1>h2 a,
+.vm-product-descr-container-0>h2 a {
+    color: #039f9d !important;
+}
+
+.spacer.product-container {
+    border: none !important;
+    margin: 0 !important;
+}
+
+.vm-pagination {
+    float: none !important;
+}
+
+@media screen and (min-width: 992px) {
+    div.product {
+        width: 25% !important;
+    }
+}
+
 /* Styles for HTML inserted with custom-scripts.js */
 @media screen and (max-width: 992px) {
     #astroid-header .contact-info-wrapper {
